@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savanna Bites | Kenyan Food</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif;}
+body{background:#f4f4f4;color:#333}
+
+/* NAV */
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:rgba(0,0,0,0.8);
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+nav h1{color:#f1c40f}
+nav a{color:white;text-decoration:none;font-weight:bold;margin-left:20px}
+
+/* HERO */
+header{
+  height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+  url("https://images.unsplash.com/photo-1604908554168-3b0c4d4b2a5c?auto=format&fit=crop&w=1500&q=80");
+  background-size:cover;
+  background-position:center;
+}
+.hero{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+}
+.hero h2{font-size:50px;margin-bottom:15px}
+.hero p{font-size:22px;margin-bottom:25px}
+.btn{
+  background:#25D366;
+  padding:14px 30px;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:5px;
+}
+
+/* SECTIONS */
+section{padding:80px 40px}
+h2{text-align:center;margin-bottom:40px;font-size:36px}
+
+/* MENU */
+.menu{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+.card{
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+.card div{padding:20px}
+.card h3{color:#c0392b;margin-bottom:10px}
+.price{color:#27ae60;font-weight:bold}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px 22px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>Savanna Bites</h1>
+  <div>
+    <a href="#">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <div class="hero">
+    <h2>Authentic Kenyan Food</h2>
+    <p>Fresh • Local • Delicious</p>
+    <a class="btn" href="https://wa.me/254112071069">Order on WhatsApp</a>
+  </div>
+</header>
+
+<section id="menu">
+<h2>Our Menu</h2>
+
+<div class="menu">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80">
+<div>
+<h3>Nyama Choma</h3>
+<p>Roasted meat served with kachumbari</p>
+<p class="price">KES 900</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=800&q=80">
+<div>
+<h3>Ugali & Sukuma Wiki</h3>
+<p>Traditional Kenyan staple</p>
+<p class="price">KES 350</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600628422019-52c42c1c73f1?auto=format&fit=crop&w=800&q=80">
+<div>
+<h3>Pilau</h3>
+<p>Spiced rice with beef</p>
+<p class="price">KES 600</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604908177225-d7e6b4f2e8c5?auto=format&fit=crop&w=800&q=80">
+<div>
+<h3>Chapati & Ndengu</h3>
+<p>Soft chapati with green grams</p>
+<p class="price">KES 400</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606851092131-d5a1c6d0d9ca?auto=format&fit=crop&w=800&q=80">
+<div>
+<h3>Tilapia Fry</h3>
+<p>Fried fish with ugali</p>
+<p class="price">KES 850</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1623653893144-6c6d9f8c1a8d?auto=format&fit=crop&w=800&q=80">
+<div>
+<h3>Mandazi & Chai</h3>
+<p>Sweet mandazi with tea</p>
+<p class="price">KES 250</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Order Now</h2>
+<p style="text-align:center">WhatsApp: <b>0112071069</b></p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/254112071069">WhatsApp Order</a>
+
+<footer>
+<p>&copy; 2026 Savanna Bites 🇰🇪</p>
+</footer>
+
+</body>
+</html>
